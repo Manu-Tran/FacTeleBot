@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+# --------------------------- PARAMETERS NEEDED -------------------------------
+export FACTORIO_DIR_PATH=
+export TELEGRAM_CHANNEL_ID=
+export TELEGRAM_BOT_TOKEN=
+
+# --------------------------- OPTIONAL PARAMETERS -------------------------------
+# export FACTORIO_HOST=127.0.0.1
+
+# Get script location
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+/usr/bin/python3 "$DIR"/factelebot.py
